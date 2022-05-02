@@ -1,9 +1,8 @@
-package Warmup;
+package CodingBat;
 
-public class SleepIn {
+public class Warmup {
 
     public boolean sleepIn(boolean weekday, boolean vacation) {
         return !weekday || vacation;
     }
-
 }

@@ -1,4 +1,4 @@
-import Warmup.SleepIn;
+import CodingBat.Warmup;
 
 public class Main {
 
@@ -6,10 +6,10 @@ public class Main {
         //Hello world
         System.out.println("Hello world");
 
-        SleepIn s = new SleepIn();
+        Warmup w = new Warmup();
 
-        System.out.println(s.sleepIn(false, false));
-        System.out.println(s.sleepIn(true, false));
-        System.out.println(s.sleepIn(false, true));
+        System.out.println(w.sleepIn(false, false));
+        System.out.println(w.sleepIn(true, false));
+        System.out.println(w.sleepIn(false, true));
     }
 }
