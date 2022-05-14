@@ -18,4 +18,8 @@ public class Warmup {
         return n > 21 ? (n - 21) * 2 : (21 - n);
     }
 
+    public boolean parrotTrouble(boolean talking, int hour) {
+        return (hour > 20 || hour < 7) && talking;
+    }
+
 }

@@ -20,9 +20,13 @@ public class Main {
 //        System.out.println(w.sumDouble(3,2));
 //        System.out.println(w.sumDouble(2,2));
 
-        System.out.println(w.diff21(19));
-        System.out.println(w.diff21(10));
-        System.out.println(w.diff21(23));
+//        System.out.println(w.diff21(19));
+//        System.out.println(w.diff21(10));
+//        System.out.println(w.diff21(23));
+
+        System.out.println(w.parrotTrouble(true, 6));
+        System.out.println(w.parrotTrouble(true, 7));
+        System.out.println(w.parrotTrouble(false, 24));
 
     }
 }
