@@ -1,4 +1,5 @@
 import CodingBat.Warmup;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class Main {
 
@@ -7,6 +8,8 @@ public class Main {
         System.out.println("Hello world");
 
         Warmup w = new Warmup();
+
+//        assertEquals(w.parrotTrouble(true, 6), true);
 
 //        System.out.println(w.sleepIn(false, false));
 //        System.out.println(w.sleepIn(true, false));
@@ -24,9 +27,13 @@ public class Main {
 //        System.out.println(w.diff21(10));
 //        System.out.println(w.diff21(23));
 
-        System.out.println(w.parrotTrouble(true, 6));
-        System.out.println(w.parrotTrouble(true, 7));
-        System.out.println(w.parrotTrouble(false, 24));
+//        System.out.println(w.parrotTrouble(true, 6));
+//        System.out.println(w.parrotTrouble(true, 7));
+//        System.out.println(w.parrotTrouble(false, 24));
+
+        System.out.println(w.makes10(9, 10));
+        System.out.println(w.makes10(9, 9));
+        System.out.println(w.makes10(1, 9));
 
     }
 }
