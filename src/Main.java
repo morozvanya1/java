@@ -16,9 +16,13 @@ public class Main {
 //        System.out.println(w.monkeyTrouble(false, false));
 //        System.out.println(w.monkeyTrouble(true, false));
 
-        System.out.println(w.sumDouble(1,2));
-        System.out.println(w.sumDouble(3,2));
-        System.out.println(w.sumDouble(2,2));
+//        System.out.println(w.sumDouble(1,2));
+//        System.out.println(w.sumDouble(3,2));
+//        System.out.println(w.sumDouble(2,2));
+
+        System.out.println(w.diff21(19));
+        System.out.println(w.diff21(10));
+        System.out.println(w.diff21(23));
 
     }
 }
