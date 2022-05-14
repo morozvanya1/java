@@ -33,9 +33,14 @@ public class Start {
         //        System.out.println(w.makes10(9, 9));
         //        System.out.println(w.makes10(1, 9));
 
-        System.out.println(w.nearHundred(93));
-        System.out.println(w.nearHundred(90));
-        System.out.println(w.nearHundred(89));
+        //        System.out.println(w.nearHundred(93));
+        //        System.out.println(w.nearHundred(90));
+        //        System.out.println(w.nearHundred(89));
+
+        System.out.println(w.posNeg(1, -1, false));
+        System.out.println(w.posNeg(-1, 1, false));
+        System.out.println(w.posNeg(-4, -5, true));
+
     }
 
 }
