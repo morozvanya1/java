@@ -51,4 +51,9 @@ public class Warmup {
         return str;
     }
 
+    public String frontBack(String str) {
+        int lastCharStr = str.length()-1;
+        return str.length() > 1 ? str.substring(lastCharStr) + str.substring(1,lastCharStr) + str.charAt(0) : str;
+    }
+
 }
