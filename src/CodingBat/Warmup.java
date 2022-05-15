@@ -41,4 +41,14 @@ public class Warmup {
         return (str.length() > 2) && str.substring(0,3).equals("not") ? str : "not " + str;
     }
 
+    public String missingChar(String str, int n) {
+        if (str.length() >= n) {
+            if (n == 0) {
+                return str.substring(n+1);
+            }
+            return str.substring(0,n) + str.substring(n+1);
+        }
+        return str;
+    }
+
 }

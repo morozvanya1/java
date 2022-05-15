@@ -41,9 +41,13 @@ public class Start {
         //        System.out.println(w.posNeg(-1, 1, false));
         //        System.out.println(w.posNeg(-4, -5, true));
 
-        System.out.println(w.notString("candy").equals("not candy"));
-        System.out.println(w.notString("x").equals("not x"));
-        System.out.println(w.notString("not bad").equals("not bad"));
+        //        System.out.println(w.notString("candy").equals("not candy"));
+        //        System.out.println(w.notString("x").equals("not x"));
+        //        System.out.println(w.notString("not bad").equals("not bad"));
+
+        System.out.println(w.missingChar("kitten", 1).equals("ktten"));
+        System.out.println(w.missingChar("kitten", 0).equals("itten"));
+        System.out.println(w.missingChar("kitten", 4).equals("kittn"));
 
     }
 
