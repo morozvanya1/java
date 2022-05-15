@@ -56,4 +56,13 @@ public class Warmup {
         return str.length() > 1 ? str.substring(lastCharStr) + str.substring(1,lastCharStr) + str.charAt(0) : str;
     }
 
+    public String front3(String str) {
+        String tripleStr = str + str + str;
+        if (str.length() > 2) {
+            String subTripleStr = str.substring(0,3) + str.substring(0,3) + str.substring(0,3);
+            return subTripleStr;
+        }
+        return tripleStr;
+    }
+
 }

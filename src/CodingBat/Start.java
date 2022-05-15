@@ -49,9 +49,13 @@ public class Start {
         //        System.out.println(w.missingChar("kitten", 0).equals("itten"));
         //        System.out.println(w.missingChar("kitten", 4).equals("kittn"));
 
-        System.out.println(w.frontBack("code").equals("eodc"));
-        System.out.println(w.frontBack("a").equals("a"));
-        System.out.println(w.frontBack("ab").equals("ba"));
+        //        System.out.println(w.frontBack("code").equals("eodc"));
+        //        System.out.println(w.frontBack("a").equals("a"));
+        //        System.out.println(w.frontBack("ab").equals("ba"));
+
+        System.out.println(w.front3("Java").equals("JavJavJav"));
+        System.out.println(w.front3("Chocolate").equals("ChoChoCho"));
+        System.out.println(w.front3("abc").equals("abcabcabc"));
 
     }
 
