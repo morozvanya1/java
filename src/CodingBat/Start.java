@@ -6,6 +6,7 @@ public class Start {
 
     public void printResultWarmup() {
         Warmup w = new Warmup();
+        Print p = new Print();
 
         //       assertEquals(w.parrotTrouble(true, 6), true);
 
@@ -53,9 +54,13 @@ public class Start {
         //        System.out.println(w.frontBack("a").equals("a"));
         //        System.out.println(w.frontBack("ab").equals("ba"));
 
-        System.out.println(w.front3("Java").equals("JavJavJav"));
-        System.out.println(w.front3("Chocolate").equals("ChoChoCho"));
-        System.out.println(w.front3("abc").equals("abcabcabc"));
+        //        System.out.println(w.front3("Java").equals("JavJavJav"));
+        //        System.out.println(w.front3("Chocolate").equals("ChoChoCho"));
+        //        System.out.println(w.front3("abc").equals("abcabcabc"));
+
+        p.printAllInConsole(w.backAround("cat"),"tcatt",
+                w.backAround("Hello"),"oHelloo",
+                w.backAround("a"), "aaa");
 
     }
 

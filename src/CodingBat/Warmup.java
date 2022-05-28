@@ -65,4 +65,12 @@ public class Warmup {
         return tripleStr;
     }
 
+    public String backAround(String str) {
+        if (str.length() > 0) {
+            char lastStr = str.charAt(str.length()-1);
+            str = lastStr + str + lastStr;
+        }
+        return str;
+    }
+
 }
