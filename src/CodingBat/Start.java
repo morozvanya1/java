@@ -58,9 +58,13 @@ public class Start {
         //        System.out.println(w.front3("Chocolate").equals("ChoChoCho"));
         //        System.out.println(w.front3("abc").equals("abcabcabc"));
 
-        p.printAllInConsole(w.backAround("cat"),"tcatt",
-                w.backAround("Hello"),"oHelloo",
-                w.backAround("a"), "aaa");
+        //        p.printAllInConsole(w.backAround("cat"),"tcatt",
+        //                w.backAround("Hello"),"oHelloo",
+        //                w.backAround("a"), "aaa");
+
+        System.out.println(w.or35(3));
+        System.out.println(w.or35(10));
+        System.out.println(w.or35(8));
 
     }
 
