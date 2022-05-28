@@ -77,5 +77,15 @@ public class Warmup {
         return n % 3 == 0 || n % 5 == 0;
     }
 
+    public String front22(String str) {
+        if (str.length() == 1) {
+            char lastStr = str.charAt(0);
+            str = lastStr + str + lastStr;
+        } else if (str.length() > 1) {
+            String lastStr = str.substring(0,2);
+            str = lastStr + str + lastStr;
+        }
+        return str;
+    }
 
 }

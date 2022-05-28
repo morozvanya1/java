@@ -62,9 +62,13 @@ public class Start {
         //                w.backAround("Hello"),"oHelloo",
         //                w.backAround("a"), "aaa");
 
-        System.out.println(w.or35(3));
-        System.out.println(w.or35(10));
-        System.out.println(w.or35(8));
+        //        System.out.println(w.or35(3));
+        //        System.out.println(w.or35(10));
+        //        System.out.println(w.or35(8));
+
+        p.printAllInConsole(w.front22("kitten"),"kikittenki",
+                w.front22("Ha"),"HaHaHa",
+                w.front22("abc"),"ababcab");
 
     }
 
