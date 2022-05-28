@@ -66,9 +66,13 @@ public class Start {
         //        System.out.println(w.or35(10));
         //        System.out.println(w.or35(8));
 
-        p.printAllInConsole(w.front22("kitten"),"kikittenki",
-                w.front22("Ha"),"HaHaHa",
-                w.front22("abc"),"ababcab");
+        //        p.printAllInConsole(w.front22("kitten"),"kikittenki",
+        //                w.front22("Ha"),"HaHaHa",
+        //                w.front22("abc"),"ababcab");
+
+        System.out.println(w.startHi("hi there"));
+        System.out.println(w.startHi("hi"));
+        System.out.println(w.startHi("hello hi"));
 
     }
 
