@@ -100,4 +100,8 @@ public class Warmup {
         return a >= 10 && a <= 20 || b >= 10 && b <= 20;
     }
 
+    public boolean hasTeen(int a, int b, int c) {
+        return a == 10 || a >= 13 && a <= 19 || b == 10 || b >= 13 && b <= 19 || c == 10 || c >= 13 && c <= 19;
+    }
+
 }
