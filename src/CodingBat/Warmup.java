@@ -126,4 +126,22 @@ public class Warmup {
         return false;
     }
 
+    public String startOz(String str) {
+        String newStr = "";
+        if (str.length() == 1) {
+            if (str.charAt(0) == 'o') {
+                newStr += "o";
+            }
+        } else if (str.length() > 1) {
+            if (str.charAt(0) == 'o') {
+                newStr += "o";
+            }
+            if (str.charAt(1) == 'z') {
+                newStr += "z";
+            }
+        }
+        return newStr;
+    }
+
+
 }
