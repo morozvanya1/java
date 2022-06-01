@@ -74,7 +74,9 @@ public class Start {
         //        System.out.println(w.startHi("hi"));
         //        System.out.println(w.startHi("hello hi"));
 
-
+        p.printAllInConsole(w.delDel("adelbc"),"abc",
+                                w.delDel("adelHello"), "aHello",
+                                w.delDel("adedbc"),"adedbc");
 
     }
 

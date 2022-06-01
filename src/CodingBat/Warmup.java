@@ -108,4 +108,13 @@ public class Warmup {
         return a >= 13 && a <= 19 && !(b >= 13 && b <= 19) || !(a >= 13 && a <= 19) && (b >= 13 && b <= 19);
     }
 
+    public String delDel(String str) {
+        if (str.length() > 3) {
+            if (str.substring(1,4).equals("del")) {
+                return str.charAt(0) + str.substring(4);
+            }
+        }
+        return str;
+    }
+
 }
