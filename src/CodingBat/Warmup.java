@@ -143,5 +143,10 @@ public class Warmup {
         return newStr;
     }
 
+    public int intMax(int a, int b, int c) {
+        int maxAB = Math.max(a, b);
+        int maxABOrC = Math.max(maxAB, c);
+        return maxABOrC;
+    }
 
 }
