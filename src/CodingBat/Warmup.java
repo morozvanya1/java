@@ -149,4 +149,10 @@ public class Warmup {
         return maxABOrC;
     }
 
+    public int close10(int a, int b) {
+        int newA = Math.abs(10 - a);
+        int newB = Math.abs(10 - b);
+        return newA == newB ? 0 : newA > newB ? b : a;
+    }
+
 }
