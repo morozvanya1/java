@@ -70,9 +70,11 @@ public class Start {
         //                w.front22("Ha"),"HaHaHa",
         //                w.front22("abc"),"ababcab");
 
-        System.out.println(w.startHi("hi there"));
-        System.out.println(w.startHi("hi"));
-        System.out.println(w.startHi("hello hi"));
+        //        System.out.println(w.startHi("hi there"));
+        //        System.out.println(w.startHi("hi"));
+        //        System.out.println(w.startHi("hello hi"));
+
+
 
     }
 
