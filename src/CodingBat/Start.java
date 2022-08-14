@@ -83,7 +83,10 @@ public class Start {
         //                w.startOz("oxx"),"o");
 
         Warmup2 w2 = new Warmup2();
-        System.out.println(w2.stringTimes("Hi", 2));
+
+        //        System.out.println(w2.stringTimes("Hi", 2));
+
+        System.out.println(w2.frontTimes("Chocolate", 2));
     }
 
 }
