@@ -88,7 +88,11 @@ public class Start {
 
         //        System.out.println(w2.frontTimes("Chocolate", 2));
 
-        System.out.println(w2.countXX("xxx"));
+        //        System.out.println(w2.countXX("xxx"));
+
+        System.out.println(w2.doubleX("axaxax"));
+        System.out.println(w2.doubleX("xxxxx"));
+        System.out.println(w2.doubleX("xaxxx"));
     }
 
 }
