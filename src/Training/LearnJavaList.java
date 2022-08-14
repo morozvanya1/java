@@ -15,7 +15,7 @@ public class LearnJavaList {
 
         for (int i = 5; i > 0; i--) {
             myList.add(i);
-            myHash.put(i, new Random().nextInt());
+            myHash.put(i, new Random().nextInt(100));
         }
 
         for (int list : myList) {
@@ -23,7 +23,7 @@ public class LearnJavaList {
         }
         System.out.println(myList);
 
-        for (int i = 0; i < myHash.size(); i++) {
+        for (int i = 1; i < myHash.size(); i++) {
             System.out.println(myHash.get(i));
         }
 

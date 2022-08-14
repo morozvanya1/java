@@ -5,7 +5,7 @@ import static org.junit.Assert.assertEquals;
 public class Start {
 
     public void printResultWarmup() {
-        Warmup w = new Warmup();
+        Warmup1 w = new Warmup1();
         Print p = new Print();
 
         //       assertEquals(w.parrotTrouble(true, 6), true);
@@ -78,9 +78,12 @@ public class Start {
         //                                w.delDel("adelHello"), "aHello",
         //                                w.delDel("adedbc"),"adedbc");
 
-        p.printAllInConsole(w.startOz("ozymandias"),"oz",
-                w.startOz("bzoo"),"z",
-                w.startOz("oxx"),"o");
+        //        p.printAllInConsole(w.startOz("ozymandias"),"oz",
+        //                w.startOz("bzoo"),"z",
+        //                w.startOz("oxx"),"o");
+
+        Warmup2 w2 = new Warmup2();
+        System.out.println(w2.stringTimes("Hi", 2));
     }
 
 }

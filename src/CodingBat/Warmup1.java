@@ -1,6 +1,6 @@
 package CodingBat;
 
-public class Warmup {
+public class Warmup1 {
 
     public boolean sleepIn(boolean weekday, boolean vacation) {
         return !weekday || vacation;
