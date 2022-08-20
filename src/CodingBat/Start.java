@@ -96,7 +96,9 @@ public class Start {
 
         //        System.out.println(w2.stringBits("Heeololeo"));
 
-        System.out.println(w2.last2("hixxhi"));
+        //        System.out.println(w2.last2("hixxhi"));
+
+
 
     }
 
