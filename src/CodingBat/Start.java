@@ -90,9 +90,12 @@ public class Start {
 
         //        System.out.println(w2.countXX("xxx"));
 
-        System.out.println(w2.doubleX("axaxax"));
-        System.out.println(w2.doubleX("xxxxx"));
-        System.out.println(w2.doubleX("xaxxx"));
+        //        System.out.println(w2.doubleX("axaxax"));
+        //        System.out.println(w2.doubleX("xxxxx"));
+        //        System.out.println(w2.doubleX("xaxxx"));
+
+        System.out.println(w2.stringBits("Heeololeo"));
+
     }
 
 }
