@@ -98,7 +98,9 @@ public class Start {
 
         //        System.out.println(w2.last2("hixxhi"));
 
-
+        System.out.println(w2.stringMatch("xxcaazz", "xxbaaz"));
+        System.out.println(w2.stringMatch("abc", "abc"));
+        System.out.println(w2.stringMatch("abc", "axc"));
 
     }
 

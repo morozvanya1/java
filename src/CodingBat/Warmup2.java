@@ -100,4 +100,18 @@ public class Warmup2 {
         return false;
     }
 
+    public int stringMatch(String a, String b) {
+        int count = 0;
+        String newStr = "";
+        if (a.length() > 1) {
+            for (int i = 0; i < a.length() - 1; i ++) {
+                newStr = a.substring(i, i+2);
+                if (i+1 < b.length() && b.substring(i, i+2).equals(newStr)) {
+                    count++;
+                }
+            }
+        }
+        return count;
+    }
+
 }
