@@ -128,4 +128,18 @@ public class Warmup2 {
         return str;
     }
 
+    public String altPairs(String str) {
+        StringBuilder newStr = new StringBuilder();
+        int newCount = 0;
+        for (int i = 0; i < str.length(); i++) {
+            newStr.append(str.charAt(i));
+            newCount++;
+            if (newCount == 2) {
+                i += 2;
+                newCount = 0;
+            }
+        }
+        return newStr.toString();
+    }
+
 }

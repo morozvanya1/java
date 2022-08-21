@@ -102,8 +102,9 @@ public class Start {
         //        System.out.println(w2.stringMatch("abc", "abc"));
         //        System.out.println(w2.stringMatch("abc", "axc"));
 
-        System.out.println(w2.stringX("xxHxix"));
+        //        System.out.println(w2.stringX("xxHxix"));
 
+        System.out.println(w2.altPairs("kitten"));
     }
 
 }
