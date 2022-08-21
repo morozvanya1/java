@@ -104,7 +104,9 @@ public class Start {
 
         //        System.out.println(w2.stringX("xxHxix"));
 
-        System.out.println(w2.altPairs("kitten"));
+        //        System.out.println(w2.altPairs("kitten"));
+
+        System.out.println(w2.stringYak("yakpak"));
     }
 
 }
