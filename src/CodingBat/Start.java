@@ -5,8 +5,9 @@ import static org.junit.Assert.assertEquals;
 public class Start {
 
     public void printResultWarmup() {
-        Warmup1 w = new Warmup1();
+
         Print p = new Print();
+        Warmup1 w = new Warmup1();
 
         //       assertEquals(w.parrotTrouble(true, 6), true);
 
@@ -108,7 +109,14 @@ public class Start {
 
         //        System.out.println(w2.stringYak("yakpak"));
 
-        System.out.println(w2.has271(new int[]{2, 7, 4}));
+        //        System.out.println(w2.has271(new int[]{2, 7, 4}));
+
+        String1 s1 = new String1();
+
+        //        System.out.println(s1.twoChar("Hello", 4));
+
+        System.out.println(s1.deFront("away"));
+
     }
 
 }
