@@ -115,7 +115,11 @@ public class Start {
 
         //        System.out.println(s1.twoChar("Hello", 4));
 
-        System.out.println(s1.deFront("away"));
+        //        System.out.println(s1.deFront("away"));
+
+        Array1 ar1 = new Array1();
+
+        System.out.println(ar1.unlucky1(new int[]{1, 1, 1, 3, 1}));
 
     }
 
