@@ -1,5 +1,7 @@
 package CodingBat;
 
+import CodingBat.pages.*;
+
 import static org.junit.Assert.assertEquals;
 
 public class Start {
@@ -119,7 +121,11 @@ public class Start {
 
         Array1 ar1 = new Array1();
 
-        System.out.println(ar1.unlucky1(new int[]{1, 1, 1, 3, 1}));
+        //        System.out.println(ar1.unlucky1(new int[]{1, 1, 1, 3, 1}));
+
+        Logic1 l1 = new Logic1();
+
+        System.out.println(l1.sumLimit(8, 1));
 
     }
 

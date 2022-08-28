@@ -1,4 +1,4 @@
-package CodingBat;
+package CodingBat.pages;
 
 import java.util.Arrays;
 

@@ -1,4 +1,4 @@
-package CodingBat;
+package CodingBat.pages;
 
 public class Warmup1 {
 
