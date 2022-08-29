@@ -2,6 +2,8 @@ package CodingBat;
 
 import CodingBat.pages.*;
 
+import java.util.Map;
+
 import static org.junit.Assert.assertEquals;
 
 public class Start {
@@ -125,7 +127,7 @@ public class Start {
 
         Logic1 l1 = new Logic1();
 
-        System.out.println(l1.sumLimit(8, 1));
+        //        System.out.println(l1.sumLimit(8, 1));
 
     }
 
