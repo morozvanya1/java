@@ -129,6 +129,10 @@ public class Start {
 
         //        System.out.println(l1.sumLimit(8, 1));
 
+        String2 s2 = new String2();
+
+        System.out.println(s2.starOut("ab**cd"));
+
     }
 
 }
