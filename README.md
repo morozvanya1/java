@@ -1,3 +1,3 @@
 # Getting Started
 
-This project need to me for leaning Java.
+I need this project to learn Java.
