@@ -2,7 +2,7 @@ package CodingBat;
 
 import CodingBat.pages.*;
 
-import java.util.Map;
+import java.util.*;
 
 import static org.junit.Assert.assertEquals;
 
@@ -131,7 +131,12 @@ public class Start {
 
         String2 s2 = new String2();
 
-        System.out.println(s2.starOut("ab**cd"));
+        //        System.out.println(s2.starOut("ab**cd"));
+
+        Array2 s3 = new Array2();
+
+        //        System.out.println(s3.bigDiff(new int[]{10, 3, 5, 6}));
+        System.out.println(s3.centeredAverage(new int[]{5, 3, 4, 6, 2}));
 
     }
 
