@@ -47,6 +47,42 @@ public class Array2 {
     }
 
     public int sum13(int[] nums) {
+        int sum = 0;
+        for (int i = 0; i < nums.length; i++) {
+            if (nums[i] != 13) {
+                sum += nums[i];
+            } else {
+                i++;
+            };
+        }
+        return sum;
+    }
+
+    public int sum67(int[] nums) {
+        int sum = 0;
+        boolean check = false;
+        for (int i = 0; i < nums.length; i++) {
+            if (nums[i] == 7 && check) {
+                check = false;
+            } else if (nums[i] == 6 || check) {
+                check = true;
+            } else {
+                sum += nums[i];
+            }
+        }
+        return sum;
+    }
+
+    public boolean has22(int[] nums) {
+        for (int i = 1; i < nums.length; i++) {
+            if (nums[i] == 2 && nums[i-1] == 2) {
+                return true;
+            }
+        }
+        return false;
+    }
+
+    public boolean lucky13(int[] nums) {
 
     }
 
