@@ -83,7 +83,36 @@ public class Array2 {
     }
 
     public boolean lucky13(int[] nums) {
+        for (int num : nums) {
+            if (num == 1) {
+                return false;
+            } else if (num == 3) {
+                return false;
+            }
+        }
+        return true;
+    }
 
+    public boolean sum28(int[] nums) {
+        int sum = 0;
+        for (int num : nums) {
+            if (num == 2) {
+                sum += num;
+            }
+        }
+        return sum == 8;
+    }
+
+    public boolean more14(int[] nums) {
+        int count = 0;
+        for (int num : nums) {
+            if (num == 1) {
+                count++;
+            } else if (num == 4) {
+                count--;
+            }
+        }
+        return count > 0;
     }
 
 }
