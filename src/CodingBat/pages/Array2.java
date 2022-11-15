@@ -152,4 +152,39 @@ public class Array2 {
         return !(isOne && isFour);
     }
 
+    public boolean isEverywhere(int[] nums, int val) {
+        for (int i = 0; i < nums.length - 1; i++) {
+            if (nums[i] != val && nums[i + 1] != val) {
+                return false;
+            }
+        }
+        return true;
+    }
+
+    public boolean either24(int[] nums) {
+        boolean isDoubleTwo = false, isDoubleFour = false;
+        for (int i = 0; i < nums.length - 1; i++) {
+            if (nums[i] == 2 && nums[i + 1] == 2) {
+                isDoubleTwo = true;
+            } else if (nums[i] == 4 && nums[i + 1] == 4) {
+                isDoubleFour = true;
+            }
+        }
+        return isDoubleTwo ^ isDoubleFour;
+    }
+
+    public int matchUp(int[] nums1, int[] nums2) {
+        int count = 0;
+        for (int i = 0; i < nums1.length; i++) {
+            if (Math.abs(nums1[i] - nums2[i]) <= 2 && nums1[i] != nums2[i]) {
+                count++;
+            }
+        }
+        return count;
+    }
+
+    public boolean has77(int[] nums) {
+
+    }
+
 }
