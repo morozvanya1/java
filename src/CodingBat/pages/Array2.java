@@ -184,6 +184,29 @@ public class Array2 {
     }
 
     public boolean has77(int[] nums) {
+        int count = 0;
+        for (int num : nums) {
+            if (num == 7) {
+                count++;
+            }
+        }
+        int[] newArr = new int[count];
+        int j = 0;
+        for (int i = 0; i < nums.length; i++) {
+            if (nums[i] == 7) {
+                newArr[j] = i;
+                j++;
+            }
+        }
+        for (int i = 0; i < newArr.length - 1; i++) {
+            if (Math.abs(newArr[i] - newArr[i+1]) < 3) {
+                return true;
+            }
+        }
+        return false;
+    }
+
+    public boolean has12(int[] nums) {
 
     }
 

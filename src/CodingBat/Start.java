@@ -136,7 +136,8 @@ public class Start {
         Array2 s3 = new Array2();
 
         //        System.out.println(s3.bigDiff(new int[]{10, 3, 5, 6}));
-        System.out.println(s3.centeredAverage(new int[]{5, 3, 4, 6, 2}));
+        //        System.out.println(s3.centeredAverage(new int[]{5, 3, 4, 6, 2}));
+        System.out.println(s3.has77(new int[]{1, 7, 1, 7}));
 
     }
 
