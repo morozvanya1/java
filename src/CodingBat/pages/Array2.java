@@ -207,6 +207,19 @@ public class Array2 {
     }
 
     public boolean has12(int[] nums) {
+        boolean isOne = false, isTwo = false;
+        for (int num : nums) {
+            if (num == 1) {
+                isOne = true;
+            } else if (num == 2 && isOne) {
+                isTwo = true;
+                isOne = false;
+            }
+        }
+        return isTwo;
+    }
+
+    public boolean modThree(int[] nums) {
 
     }
 
