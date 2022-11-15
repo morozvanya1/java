@@ -115,4 +115,41 @@ public class Array2 {
         return count > 0;
     }
 
+    public int[] fizzArray(int n) {
+        int[] newArray = new int[n];
+        for (int i = 0; i < n; i++) {
+            newArray[i] = i;
+        }
+        return newArray;
+    }
+
+    public boolean only14(int[] nums) {
+        for (int num : nums) {
+            if (num != 1 && num != 4) {
+                return false;
+            }
+        }
+        return true;
+    }
+
+    public String[] fizzArray2(int n) {
+        String[] newArray = new String[n];
+        for (int i = 0; i < n; i++) {
+            newArray[i] = String.valueOf(i);
+        }
+        return newArray;
+    }
+
+    public boolean no14(int[] nums) {
+        boolean isOne = false, isFour = false;
+        for (int num : nums) {
+            if (num == 1) {
+                isOne = true;
+            } else if (num == 4) {
+                isFour = true;
+            }
+        }
+        return !(isOne && isFour);
+    }
+
 }
