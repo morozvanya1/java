@@ -231,6 +231,123 @@ public class Array2 {
     }
 
     public boolean haveThree(int[] nums) {
+        int count = 0;
+        boolean isAppear = false;
+        for (int num : nums) {
+            if (num == 3) {
+                count++;
+            }
+        }
+        int[] newArr = new int[count];
+        int j = 0;
+        for (int i = 0; i < nums.length; i++) {
+            if (nums[i] == 3) {
+                newArr[j] = i;
+                j++;
+            }
+        }
+        for (int i = 0; i < newArr.length - 1; i++) {
+            if (newArr[i] + 1 != newArr[i+1]) {
+                isAppear = true;
+            } else {
+                return false;
+            }
+        }
+        return isAppear && count == 3;
+    }
+
+    public boolean twoTwo(int[] nums) {
+        boolean isAppearTwoTwo = true;
+        int count = 0;
+        for (int num : nums) {
+            if (num == 2) {
+                count++;
+            }
+        }
+        int[] newArr = new int[count];
+        int j = 0;
+        for (int i = 0; i < nums.length; i++) {
+            if (nums[i] == 2) {
+                newArr[j] = i;
+                j++;
+            }
+        }
+        for (int i = 0; i < newArr.length - 1; i++) {
+            if (newArr[i] + 1 != newArr[i+1]) {
+                isAppearTwoTwo = false;
+            }
+        }
+        return isAppearTwoTwo && count != 1;
+    }
+
+    public boolean sameEnds(int[] nums, int len) {
+        for (int i = 0; i < len; i++) {
+            if (nums[i] != nums[nums.length - len + i]) {
+                return false;
+            }
+        }
+        return true;
+    }
+
+    public boolean tripleUp(int[] nums) {
+        for (int i = 0; i < nums.length - 2; i++) {
+            if (nums[i] + 1 == nums[i+1] && nums[i+1] + 1 == nums[i+2]) {
+                return true;
+            }
+        }
+        return false;
+    }
+
+    public int[] fizzArray3(int start, int end) {
+        int[] newArray = new int[end - start];
+        for (int i = 0; i < newArray.length; i++) {
+            newArray[i] = start + i;
+        }
+        return newArray;
+    }
+
+    public int[] shiftLeft(int[] nums) {
+        int tmp = nums.length > 0 ? nums[0] : 0;
+        for (int i = 0; i < nums.length - 1; i++) {
+            nums[i] = nums[i+1];
+            if (i == nums.length - 2) {
+                nums[i + 1] = tmp;
+            }
+        }
+        return nums;
+    }
+
+    public int[] tenRun(int[] nums) {
+        int tmp = 0;
+        boolean isModTen = false;
+        for (int i = 0; i < nums.length; i++) {
+            if (nums[i] % 10 == 0) {
+                tmp = nums[i];
+                isModTen = true;
+            }
+            if (isModTen) {
+                nums[i] = tmp;
+            }
+        }
+        return nums;
+    }
+
+    public int[] pre4(int[] nums) {
+        int count = 0;
+        for (int i = 0; i < nums.length; i++) {
+            if (nums[i] == 4) {
+                count = i;
+                break;
+            }
+        }
+        int[] newArray = new int[count];
+        for (int i = 0; i < newArray.length; i++) {
+            newArray[i] = nums[i];
+        }
+        return newArray;
+    }
+
+    public int[] post4(int[] nums) {
 
     }
 
