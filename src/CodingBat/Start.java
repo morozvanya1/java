@@ -122,7 +122,6 @@ public class Start {
         //        System.out.println(s1.deFront("away"));
 
         Array1 ar1 = new Array1();
-
         //        System.out.println(ar1.unlucky1(new int[]{1, 1, 1, 3, 1}));
 
         Logic1 l1 = new Logic1();
@@ -137,8 +136,10 @@ public class Start {
 
         //        System.out.println(s3.bigDiff(new int[]{10, 3, 5, 6}));
         //        System.out.println(s3.centeredAverage(new int[]{5, 3, 4, 6, 2}));
-        System.out.println(s3.has77(new int[]{1, 7, 1, 7}));
+        //        System.out.println(s3.has77(new int[]{1, 7, 1, 7}));
+        //        System.out.println(s3.withoutTen(new int[]{1, 10, 10, 2}));
 
+        System.out.println(s3.fizzBuzz(1, 6));
     }
 
 }

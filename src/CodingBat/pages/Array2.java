@@ -348,7 +348,111 @@ public class Array2 {
     }
 
     public int[] post4(int[] nums) {
+        int count = 0;
+        for (int i = nums.length - 1; i > 0; i--) {
+            if (nums[i] == 4) {
+                break;
+            }
+            count++;
+        }
+        int[] newArray = new int[count];
+        for (int i = 0; i < newArray.length; i++) {
+            newArray[i] = nums[nums.length - count + i];
+        }
+        return newArray;
+    }
 
+    public int[] notAlone(int[] nums, int val) {
+        for (int i = 1; i < nums.length - 1; i++) {
+            if (nums[i] == val && (nums[i-1] != nums[i] && nums[i+1] != nums[i])) {
+                nums[i] = Math.max(nums[i-1], nums[i]);
+                nums[i] = Math.max(nums[i+1], nums[i]);
+            }
+        }
+        return nums;
+    }
+
+    public int[] zeroFront(int[] nums) {
+        boolean isSorted = false;
+        while (!isSorted) {
+            isSorted = true;
+            for (int i = 0; i < nums.length - 1; i++) {
+                int temp = 0;
+                if (Math.abs(nums[i]) > Math.abs(nums[i + 1])) {
+                    isSorted = false;
+                    temp = nums[i + 1];
+                    nums[i + 1] = nums[i];
+                    nums[i] = temp;
+                }
+            }
+        }
+        return nums;
+    }
+
+    public int[] withoutTen(int[] nums) {
+        int [] numsWithoutTen = new int[nums.length];
+        int j = 0;
+        for (int i = 0; i < nums.length; i++) {
+            if (nums[i] != 10) {
+                numsWithoutTen[j] = nums[i];
+                j++;
+            }
+        }
+        return numsWithoutTen;
+    }
+
+    public int[] zeroMax(int[] nums) {
+        int tmp = 0;
+        for (int i = 0; i < nums.length; i++) {
+            if (nums[i] == 0) {
+                for (int j = i; j < nums.length; j++) {
+                    if (nums[j] % 2 != 0) {
+                        tmp = Math.max(tmp, nums[j]);
+                    }
+                }
+                nums[i] = tmp;
+                tmp = 0;
+            }
+        }
+        return nums;
+    }
+
+    public int[] evenOdd(int[] nums) {
+        int countOdd = 0;
+        for (int num : nums) {
+            if (num % 2 == 0) {
+                countOdd++;
+            }
+        }
+        int[] newArr = new int[nums.length];
+        int j = 0;
+        int k = countOdd;
+        for (int i = 0; i < nums.length; i++) {
+            if (nums[i] % 2 == 0) {
+                newArr[j] = nums[i];
+                j++;
+            } else {
+                newArr[k] = nums[i];
+                k++;
+            }
+        }
+        return newArr;
+    }
+
+    public String[] fizzBuzz(int start, int end) {
+        String[] strArr = new String[end - start];
+        for (int i = 0; i < strArr.length; i++) {
+            if ((start + i) % 5 == 0 && (start + i) % 3 == 0) {
+                strArr[i] = "FizzBuzz";
+            } else if ((start + i) % 3 == 0) {
+                strArr[i] = "Fizz";
+            } else if ((start + i) % 5 == 0) {
+                strArr[i] = "Buzz";
+            } else {
+                strArr[i] = String.valueOf(start + i);
+            }
+        }
+        return strArr;
     }
 
 }
