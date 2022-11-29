@@ -138,8 +138,12 @@ public class Start {
         //        System.out.println(s3.centeredAverage(new int[]{5, 3, 4, 6, 2}));
         //        System.out.println(s3.has77(new int[]{1, 7, 1, 7}));
         //        System.out.println(s3.withoutTen(new int[]{1, 10, 10, 2}));
+        //        System.out.println(s3.fizzBuzz(1, 6));
 
-        System.out.println(s3.fizzBuzz(1, 6));
+        Logic2 l2 = new Logic2();
+
+        //        System.out.println(l2.makeBricks(3, 2, 10));
+        System.out.println(l2.makeChocolate(5, 4, 9));
     }
 
 }
