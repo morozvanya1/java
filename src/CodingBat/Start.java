@@ -132,18 +132,25 @@ public class Start {
 
         //        System.out.println(s2.starOut("ab**cd"));
 
-        Array2 s3 = new Array2();
+        Array2 a2 = new Array2();
 
-        //        System.out.println(s3.bigDiff(new int[]{10, 3, 5, 6}));
-        //        System.out.println(s3.centeredAverage(new int[]{5, 3, 4, 6, 2}));
-        //        System.out.println(s3.has77(new int[]{1, 7, 1, 7}));
-        //        System.out.println(s3.withoutTen(new int[]{1, 10, 10, 2}));
-        //        System.out.println(s3.fizzBuzz(1, 6));
+        //        System.out.println(a2.bigDiff(new int[]{10, 3, 5, 6}));
+        //        System.out.println(a2.centeredAverage(new int[]{5, 3, 4, 6, 2}));
+        //        System.out.println(a2.has77(new int[]{1, 7, 1, 7}));
+        //        System.out.println(a2.withoutTen(new int[]{1, 10, 10, 2}));
+        //        System.out.println(a2.fizzBuzz(1, 6));
 
         Logic2 l2 = new Logic2();
 
         //        System.out.println(l2.makeBricks(3, 2, 10));
-        System.out.println(l2.makeChocolate(5, 4, 9));
+        //        System.out.println(l2.makeChocolate(5, 4, 9));
+
+        String3 s3 = new String3();
+
+        //        System.out.println(s3.countYZ("fez day"));
+//        System.out.println(s3.withoutString("1111", "11"));
+
+        System.out.println(s3.equalIsNot("This is notnot"));
     }
 
 }
