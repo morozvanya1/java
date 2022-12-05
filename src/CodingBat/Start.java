@@ -148,9 +148,13 @@ public class Start {
         String3 s3 = new String3();
 
         //        System.out.println(s3.countYZ("fez day"));
-//        System.out.println(s3.withoutString("1111", "11"));
+        //        System.out.println(s3.withoutString("1111", "11"));
+        //        System.out.println(s3.countTriple("abcXXXabc"));
+        //        System.out.println(s3.sameEnds("xavaXYZjava"));
+        //        System.out.println(s3.mirrorEnds("xxYxx"));
 
-        System.out.println(s3.equalIsNot("This is notnot"));
+//        System.out.println(s3.sumNumbers("aa11b33"));
+        System.out.println(s3.notReplace("This-is"));
     }
 
 }
