@@ -152,9 +152,16 @@ public class Start {
         //        System.out.println(s3.countTriple("abcXXXabc"));
         //        System.out.println(s3.sameEnds("xavaXYZjava"));
         //        System.out.println(s3.mirrorEnds("xxYxx"));
+        //        System.out.println(s3.sumNumbers("aa11b33"));
+        //        System.out.println(s3.notReplace("This-is"));
 
-//        System.out.println(s3.sumNumbers("aa11b33"));
-        System.out.println(s3.notReplace("This-is"));
+        Array3 a3 = new Array3();
+
+        //        System.out.println(a3.maxSpan(new int[]{1, 2, 1, 1, 3}));
+        //        System.out.println(a3.fix34(new int[]{1, 3, 1, 4, 4, 3, 1}));
+        //        System.out.println(a3.fix45(new int[]{4, 5, 4, 1, 5}));
+        //        System.out.println(a3.canBalance(new int[]{1, 1, 1, 2, 1}));
+        System.out.println(a3.squareUp(1));
+
     }
-
 }
