@@ -162,8 +162,9 @@ public class Start {
         //        System.out.println(a3.fix45(new int[]{4, 5, 4, 1, 5}));
         //        System.out.println(a3.canBalance(new int[]{1, 1, 1, 2, 1}));
         //        System.out.println(a3.squareUp(1));
-//        System.out.println(a3.seriesUp(3));
-        System.out.println(a3.maxMirror(new int[]{21, 22, 9, 8, 7, 6, 23, 24, 6, 7, 8, 9, 25, 7, 8, 9}));
+        //        System.out.println(a3.seriesUp(3));
+        //        System.out.println(a3.maxMirror(new int[]{21, 22, 9, 8, 7, 6, 23, 24, 6, 7, 8, 9, 25, 7, 8, 9}));
+        System.out.println(a3.countClumps(new int[]{1, 1, 1, 2, 1, 1}));
 
     }
 }

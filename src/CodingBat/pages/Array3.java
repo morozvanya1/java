@@ -163,7 +163,21 @@ public class Array3 {
     }
 
     public int countClumps(int[] nums) {
-
+        int count = 0;
+        int tempCount = 0;
+        int temp = nums.length == 0 ? 0 : nums[0];
+        for (int i = 0; i < nums.length - 1; i++) {
+            if (tempCount > 0 && temp == nums[i + 1]) {
+                continue;
+            } if (temp == nums[i + 1]) {
+                count++;
+                tempCount++;
+            } else {
+                temp = nums[i + 1];
+                tempCount = 0;
+            }
+        }
+        return count;
     }
 
 }
