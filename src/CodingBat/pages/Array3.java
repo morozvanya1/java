@@ -110,6 +110,59 @@ public class Array3 {
     }
 
     public int[] seriesUp(int n) {
+        int[] arr = new int[n*(n + 1)/2];
+        int inc = 1;
+        int nextObjMas = 1;
+        int j = 0;
+        for (int i = 0; i < n; i++) {
+            // 1   1 2   1 2 3
+            for (; j < nextObjMas*(nextObjMas + 1)/2; j++) {
+                arr[j] = inc;
+                inc++;
+            }
+            nextObjMas++;
+            inc = 1;
+        }
+        return arr;
+    }
+
+    public int maxMirror(int[] nums) {
+        int[] mirrorMass = new int[nums.length];
+        int length = 0;
+        int maxLength = 0;
+        //Копируем зеркально массив nums
+        for (int i = 0; i < nums.length; i++) {
+            mirrorMass[i] = nums[nums.length - 1 - i];
+        }
+        //Ищем одинаковый элемент
+        int j = 0;
+        for (int i = 0; i < nums.length; i++) {
+            for (; j < mirrorMass.length; j++) {
+                if (nums[i] == mirrorMass[j]) {
+                    length++;
+                    j++;
+                    break;
+                } else if (length != 0) {
+                    maxLength = Math.max(maxLength, length);
+                    i -= length;
+                    length = 0;
+                }
+            }
+            if (j == mirrorMass.length) {
+                maxLength = Math.max(maxLength, length);
+                length = 0;
+                j = 0;
+            }
+
+        }
+        maxLength = Math.max(maxLength, length);
+//            21 22 9 8 7 6 23 24 6 7 8 9 25 7 8 9
+//            9 8 7 25 9 8 7 6 24 23 6 7 8 9 22 21
+
+        return maxLength;
+    }
+
+    public int countClumps(int[] nums) {
 
     }
 
