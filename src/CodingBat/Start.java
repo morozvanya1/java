@@ -167,12 +167,16 @@ public class Start {
         //        System.out.println(a3.countClumps(new int[]{1, 1, 1, 2, 1, 1}));
 
         AP1 ap1 = new AP1();
+
         //        System.out.println(ap1.hasOne(1));
         //        System.out.println(ap1.dividesSelf(32));
         //        System.out.println(ap1.sumHeights2(new int[]{5, 3, 6, 7, 2}, 2, 4));
         //        System.out.println(ap1.userCompare("bb", 5, "bb", 1));
         //        System.out.println(ap1.mergeTwo(new String[]{"a", "c", "z"}, new String[]{"a", "c", "z"}, 3));
-        System.out.println(ap1.commonTwo(new String[]{"a", "c", "x"}, new String[]{"b", "c", "d", "x"}));
+        //        System.out.println(ap1.commonTwo(new String[]{"a", "c", "x"}, new String[]{"b", "c", "d", "x"}));
+
+        Functional1 f1 = new Functional1();
+        System.out.println(f1.noX(Arrays.asList("ax", "bb", "cx")));
 
     }
 }
