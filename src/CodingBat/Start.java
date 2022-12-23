@@ -164,7 +164,15 @@ public class Start {
         //        System.out.println(a3.squareUp(1));
         //        System.out.println(a3.seriesUp(3));
         //        System.out.println(a3.maxMirror(new int[]{21, 22, 9, 8, 7, 6, 23, 24, 6, 7, 8, 9, 25, 7, 8, 9}));
-        System.out.println(a3.countClumps(new int[]{1, 1, 1, 2, 1, 1}));
+        //        System.out.println(a3.countClumps(new int[]{1, 1, 1, 2, 1, 1}));
+
+        AP1 ap1 = new AP1();
+        //        System.out.println(ap1.hasOne(1));
+        //        System.out.println(ap1.dividesSelf(32));
+        //        System.out.println(ap1.sumHeights2(new int[]{5, 3, 6, 7, 2}, 2, 4));
+        //        System.out.println(ap1.userCompare("bb", 5, "bb", 1));
+        //        System.out.println(ap1.mergeTwo(new String[]{"a", "c", "z"}, new String[]{"a", "c", "z"}, 3));
+        System.out.println(ap1.commonTwo(new String[]{"a", "c", "x"}, new String[]{"b", "c", "d", "x"}));
 
     }
 }
