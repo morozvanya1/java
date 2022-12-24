@@ -176,7 +176,19 @@ public class Start {
         //        System.out.println(ap1.commonTwo(new String[]{"a", "c", "x"}, new String[]{"b", "c", "d", "x"}));
 
         Functional1 f1 = new Functional1();
-        System.out.println(f1.noX(Arrays.asList("ax", "bb", "cx")));
+
+        //        System.out.println(f1.noX(Arrays.asList("ax", "bb", "cx")));
+
+        Recursion1 r1 = new Recursion1();
+
+        //        System.out.println(r1.fibonacci(8));
+        //        System.out.println(r1.count8(8818));
+        //        System.out.println(r1.countHi("xxhixx"));
+        //        System.out.println(r1.array6(new int[]{1, 6, 4}, 0));
+        //        System.out.println(r1.array220(new int[]{1, 2, 20}, 0));
+        //        System.out.println(r1.countPairs("hihih"));
+        //        System.out.println(r1.countAbc("abc"));
+        System.out.println(r1.stringClean("yyzzza"));
 
     }
 }
