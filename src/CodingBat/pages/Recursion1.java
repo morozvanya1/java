@@ -195,7 +195,57 @@ public class Recursion1 {
     }
 
     public int countHi2(String str) {
+        if (str.length() < 2) return 0;
+        int count = 0;
+        int substr = 1;
+        if (str.startsWith("xhi")) substr = 3;
+        if (str.startsWith("hi")) count++;
+        return count + (count > 0 ? countHi2(str.substring(2)) : countHi2(str.substring(substr)));
+    }
 
+    public String parenBit(String str) {
+        if (str.length() < 1) return "";
+        boolean isRight = false;
+        boolean isLeft = false;
+        if (str.charAt(0) != '(') isRight = true;
+        else if (str.charAt(str.length() - 1) != ')') isLeft = true;
+        else return str;
+        return parenBit(isRight ? str.substring(1) : isLeft ? str.substring(0, str.length() - 1) : str);
+    }
+
+    public boolean nestParen(String str) {
+        if (str.length() < 1) return true;
+        if (str.length() < 2) return false;
+        if (str.charAt(0) != '(' || str.charAt(str.length()-1) != ')') return false;
+        return nestParen(str.substring(1, str.length() - 1));
+    }
+
+    public int strCount(String str, String sub) {
+        if (str.length() < sub.length()) return 0;
+        int count = 0;
+        if (str.startsWith(sub)) count++;
+        return count + (count > 0 ? strCount(str.substring(sub.length()), sub) : strCount(str.substring(1), sub));
+    }
+
+    public boolean strCopies(String str, String sub, int n) {
+        if (str.length() < sub.length()) return false;
+        boolean result = false;
+        if (str.startsWith(sub)) {
+            n--;
+        }
+        if (n == 0) result = true;
+        return result || strCopies(str.substring(1), sub, n);
+    }
+
+    public int strDist(String str, String sub) {
+        if (str.length() < sub.length() || (str.length() == sub.length() && !str.equals(sub))) return 0;
+        boolean isRight = false;
+        boolean isLeft = false;
+        if (str.startsWith(sub)) isLeft = true;
+        if (str.endsWith(sub)) isRight = true;
+        return isRight && isLeft ? str.length() :
+                    isLeft ? strDist(str.substring(0, str.length() - 1), sub) :
+                            isRight ? strDist(str.substring(1), sub) : strDist(str.substring(1, str.length() - 1), sub);
     }
 
 }

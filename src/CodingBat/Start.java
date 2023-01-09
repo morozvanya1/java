@@ -188,7 +188,11 @@ public class Start {
         //        System.out.println(r1.array220(new int[]{1, 2, 20}, 0));
         //        System.out.println(r1.countPairs("hihih"));
         //        System.out.println(r1.countAbc("abc"));
-        System.out.println(r1.stringClean("yyzzza"));
+        //        System.out.println(r1.stringClean("yyzzza"));
+        //        System.out.println(r1.countHi2("ahibhi"));
+        //        System.out.println(r1.parenBit("xyz(abc)123"));
+        //        System.out.println(r1.nestParen("(((x))"));
+        System.out.println(r1.strCount("cacatcowcat", "cat"));
 
     }
 }
