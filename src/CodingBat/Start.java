@@ -196,7 +196,7 @@ public class Start {
 
         Recursion2 r2 = new Recursion2();
 
-        System.out.println(r2.groupSum6(0, new int[] {5, 6, 2}, 7));
+        System.out.println(r2.groupSum6(0, new int[] {5, 6, 2}, 8));
 
     }
 }
