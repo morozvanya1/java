@@ -192,7 +192,11 @@ public class Start {
         //        System.out.println(r1.countHi2("ahibhi"));
         //        System.out.println(r1.parenBit("xyz(abc)123"));
         //        System.out.println(r1.nestParen("(((x))"));
-        System.out.println(r1.strCount("cacatcowcat", "cat"));
+        //        System.out.println(r1.strCount("cacatcowcat", "cat"));
+
+        Recursion2 r2 = new Recursion2();
+
+        System.out.println(r2.groupSum6(0, new int[] {5, 6, 2}, 7));
 
     }
 }
